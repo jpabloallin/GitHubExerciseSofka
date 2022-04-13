@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <style>
         .item1 { grid-area: header; }
         .item2 { grid-area: menu; }
@@ -32,6 +33,74 @@
           padding-left: 5px;
           margin: 5px;
         }
+                 /* Inicio CSS SearchBar */
+                 #navlist {
+              background-color: #0074D9;
+              position: absolute;
+              width: 100%;
+          }
+                
+          /* styling navlist anchor element */
+          #navlist a {
+              float:left;
+              display: block;
+              color: #141414;
+              text-align: center;
+              padding: 12px;
+              text-decoration: none;
+              font-size: 15px;
+          }
+            
+          .navlist-right{
+              float:right;
+          }
+        
+          /* hover effect of navlist anchor element */
+          #navlist a:hover {
+              background-color: rgb(3, 144, 187);
+              color: black;
+          }
+                
+          /* styling search bar */
+          .search input[type=text]{
+              width:300px;
+              height:25px;
+              border-radius:25px;
+              border: none;
+          }
+                
+          .search{
+              float:right;
+              margin:7px;
+          }
+                
+          .search button{
+              background-color: #0074D9;
+              color: #f2f2f2;
+              float: right;
+              padding: 5px 10px;
+              margin-right: 16px;
+              font-size: 12px;
+              border: none;
+              cursor: pointer;
+          } 
+      /* Fin CSS SearchBar */
+
+        footer {
+          background: #443f8a;
+          padding: 25px 0px 25px 0px;
+          text-align: center;
+          border: 3px solid black;
+        }
+
+        footer .redes-sociales img{
+          width: 20px; height: 20px; 
+        }
+       
+        footer p {
+          color: white;
+        }
+
         </style>
         </head>
 
@@ -40,7 +109,30 @@
 
     <div class="grid-container">
         <div class="item1">Header</div>
-        <div class="item2">
+        
+        <div class="item1"><!-- Navbar items -->
+          <div id="navlist">
+              <a href="#">Home</a>
+              <a href="#">Our Products</a>
+              <a href="#">Careers</a>
+              <a href="#">About Us</a>
+              <a href="#">Contact Us</a>
+                
+              <!-- search bar right align -->
+              <div class="search">
+                  <form action="#">
+                      <input type="text"
+                          placeholder=" Search Courses"
+                          name="search">
+                      <button>
+                          <i class="fa fa-search"
+                              style="font-size: 18px;">
+                          </i>
+                      </button>
+                  </form>
+              </div>
+          </div></div>
+          <div class="item2">
             <div>
                 Acerca de nosotros
             </div>
@@ -77,8 +169,19 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ratione molestiae eum? Dolore, voluptate quaerat in amet, 
                 iusto sint et aliquid eius eveniet incidunt repellat illo suscipit voluptatibus assumenda odit!</p>
         </div>  
-        
-        <div class="item4">Footer</div>
+        <div class="item4">
+          <footer>
+            <div class="redes-sociales">
+                <img src="./facebook.svg" alt="">
+                <img src="./instagram.svg" alt="">
+                <img src="./twitter.svg" alt="">
+                <img src="./youtube.svg" alt="">
+            </div>
+            <div>
+                <p>© GitActivity Sofka. All rights reserved.</p>
+            </div>
+        </footer>
+        </div>
     </div>
 </body>
 
