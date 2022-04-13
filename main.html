@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: footer; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header'
+            'menu main main main main'
+            'footer footer footer footer footer';
+          gap: 10px;
+          background-color: #2196F3;
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+        </style>
+        </head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+
+        <div class="item3"><h1> ESTE ES UN TITULAR </h1>
+            <h2> Otro titulo mas, 13 de abril de 2022. </h2>
+            <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="Esto deberia ser una imagen" style="width:600px;height:400px;">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ratione molestiae eum? Dolore, voluptate quaerat in amet, 
+                iusto sint et aliquid eius eveniet incidunt repellat illo suscipit voluptatibus assumenda odit!</p>
+            <h1> ESTE ES UN TITULAR </h1>
+            <h2> Otro titulo mas, 13 de abril de 2022. </h2>
+            <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297__340.jpg" alt="Esto deberia ser una imagen" style="width:600px;height:400px;">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ratione molestiae eum? Dolore, voluptate quaerat in amet, 
+                iusto sint et aliquid eius eveniet incidunt repellat illo suscipit voluptatibus assumenda odit!</p>
+        </body></div>  
+        
+        <div class="item4">Footer</div>
+    </div>
+
+    
+</html>
