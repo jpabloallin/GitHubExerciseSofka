@@ -3,7 +3,8 @@
     <head>
 
         <style>
-        .item1 { grid-area: header; }
+        .item0 { grid-area: header; }   
+        .item1 { grid-area: sidebar; }
         .item2 { grid-area: menu; }
         .item3 { grid-area: main; }
         .item4 { grid-area: footer; }
@@ -12,6 +13,7 @@
           display: grid;
           grid-template-areas:
             'header header header header header'
+            'sidebar sidebar sidebar sidebar sidebar'
             'menu main main main main'
             'footer footer footer footer footer';
           gap: 10px;
@@ -108,7 +110,21 @@
 <body>
 
     <div class="grid-container">
-        <div class="item1">Header</div>
+        <div class="item0">
+            <div>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/005/084/067/small/slogan-hi-with-smooth-lines-success-quotes-for-banner-or-wallpaper-vector.jpg" alt="Greeting"/>       
+              </div>
+              <div id="menuBar">           
+                <button type="button" id="btn"><a href="#whoAmI">Who we are</a></button>
+                <button type="button" id="btn"><a href="#ourServices">Our services</a></button>        
+                <button type="button" id="btn"><a href="#contactUs">Contact us</a></button>
+                <button type="button" id="btn"><a href="photos">Gallery</a></button> 
+                </div>
+                <div>
+                  <p style="font-weight: bold;">Type a description of the webpage here</p>
+                </div>
+        </div>
+    
         
         <div class="item1"><!-- Navbar items -->
           <div id="navlist">
