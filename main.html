@@ -25,6 +25,14 @@
           padding: 20px 0;
           font-size: 30px;
         }
+
+        .about-body {
+          background-color:rgb(217, 221, 224);
+          font-size: 18px;
+          text-align: left;
+          padding-left: 5px;
+          margin: 5px;
+        }
                  /* Inicio CSS SearchBar */
                  #navlist {
               background-color: #0074D9;
@@ -96,9 +104,12 @@
         </style>
         </head>
 
+
 <body>
 
     <div class="grid-container">
+        <div class="item1">Header</div>
+        
         <div class="item1"><!-- Navbar items -->
           <div id="navlist">
               <a href="#">Home</a>
@@ -121,7 +132,31 @@
                   </form>
               </div>
           </div></div>
-        <div class="item2">Menu</div>
+          <div class="item2">
+            <div>
+                Acerca de nosotros
+            </div>
+            <div class="about-body">
+                <p>Hola, esta es una práctica de control de versiones con Git y GitHub.</p>
+            </div>
+            <div>
+                Control de versiones con git
+            </div>
+            <div class="about-body">
+                <p>git clone https://github.com/jpabloallin/GitHubExerciseSofka.git</p>
+                <p>git checkout -b nueva-rama</p>
+                <p>git status</p>
+                <p>git add .</p>
+                <p>git commit -m "Agragar contenido a la sección Sobre nosotros"</p>
+            </div>
+            <div>
+              Reunión post-mentoring
+            </div>
+
+            <div class="about-body">
+                <img src="/session.png">
+            </div>
+        </div>
 
         <div class="item3"><h1> ESTE ES UN TITULAR </h1>
             <h2> Otro titulo mas, 13 de abril de 2022. </h2>
